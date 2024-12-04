@@ -1,6 +1,6 @@
 import React from 'react';
 import './Popular.css';
-import data_product from '../Assests/data';
+import data_product from '../Assets/data';
 import Item from '../item/item'; // Correct component name
 
 const Popular = () => {
@@ -9,7 +9,7 @@ const Popular = () => {
       <h1>POPULAR IN WOMEN</h1>
       <hr />
       <div className="Popular-item">
-        {data_product.map((item, i) => (
+        {data_product.map((item,i) => (
           <Item
             key={item.i}
             id={item.id}
