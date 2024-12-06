@@ -1,19 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom/client'; // Notice the change in import
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ShopContextProvider from './Context/ShopContext';
 
-
+// Create a root using React 18's new API
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Render the App inside the root
 root.render(
-  <ShopContextProvider>
+  <React.StrictMode>
     <App />
-    </ShopContextProvider>
-  
-    
-  
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

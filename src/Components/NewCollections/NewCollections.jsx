@@ -1,7 +1,8 @@
 import React from 'react';
 import './NewCollections.css';
 import new_collection from '../Assets/new_collections';
-import Item from '../item/item';
+import Item from '../item/item';  // Correct file path based on your file's name
+
 
 const NewCollections = () => {
   return (
