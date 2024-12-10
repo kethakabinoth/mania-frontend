@@ -38,7 +38,7 @@
 }
 
 .footer-links li:hover {
-    color: #e43434; /* Vibrant green on hover */
+    color: #f1d846; /* Vibrant green on hover */
     transform: translateY(-3px);
 }
 
