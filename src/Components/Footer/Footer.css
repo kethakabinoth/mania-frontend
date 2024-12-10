@@ -1,58 +1,102 @@
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #000000, #de92e4); /* Gradient background */
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
 }
-.footer-logo{
+
+.footer-logo {
     display: flex;
     align-items: center;
     gap: 20px;
-      
 }
-.footer-logo p{
-    color: #383838;
+
+.footer-logo p {
+    color: #ffffff;
     font-size: 46px;
     font-weight: 700;
-
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
 }
-.footer-links{
+
+.footer-links {
     display: flex;
     list-style: none;
     gap: 50px;
-    color: #252525;
+    color: #ffffff;
     font-size: 20px;
+    font-weight:600;
 }
-.footer-links li{
-    cursor: pointer;
 
+.footer-links li {
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
 }
-.footer-social-icon{
+
+.footer-links li:hover {
+    color: #e43434; /* Vibrant green on hover */
+    transform: translateY(-3px);
+}
+
+.footer-social-icon {
     display: flex;
     gap: 20px;
 }
-.footer-icons-container{
-    padding: 10px;
-    padding-bottom: 6px;
-    background: #fbfbfb;
-    border: 1px solid #ebebeb;
 
+.footer-icons-container {
+    padding: 15px;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    border-radius: 50%; /* Circular icons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2), inset 0px 2px 5px rgba(255, 255, 255, 0.8);
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.6s ease-in-out, background 0.6s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    perspective: 1000px; /* Enables 3D effects */
 }
-.footer-copyright{
+
+.footer-icons-container:hover {
+    transform: scale(1.15) rotateX(15deg) rotateY(15deg); /* 3D tilt and scaling effect */
+    background: linear-gradient(135deg, #80a9e6, #eb8de4); /* Gradient shift */
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3), 0px 4px 10px rgba(255, 255, 255, 0.5); /* Enhanced shadow on hover */
+}
+
+.footer-icons-container img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.footer-icons-container:hover img {
+    transform: rotate(10deg) scale(1.2); /* Icon rotates and scales up */
+}
+
+
+
+.footer-copyright {
     display: flex;
     flex-direction: column;
-    align-items:center ;
-    gap: 30px;
+    align-items: center;
+    gap: 10px;
     width: 100%;
-    margin-bottom: 30px;
-    color: #1a1a1a;
-    font: size 20px; ;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    font-style: italic;
 }
-.footer-copyright hr{
+
+.footer-copyright hr {
     width: 80%;
     border: none;
-    border: radius 10px;
+    border-radius: 10px;
     height: 3px;
-    background: #c7c7c7;
+    background: #ffffff;
+    opacity: 0.6;
 }
