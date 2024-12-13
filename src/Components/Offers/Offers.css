@@ -1,40 +1,62 @@
-.Offers{
+/* Offers Section Styling */
+.Offers {
     width: 65%;
     height: 60vh;
-    display:flex ;
+    display: flex;
     margin: auto;
     padding: 0px 140px;
     margin-bottom: 150px;
-    background: linear-gradient(180deg, #fde1ff 0%,#e1ffea22 60%);
+    background: linear-gradient(180deg, #f450cd 0%, #ffffff 60%); /* Updated light gradient */
+    border-radius: 20px; /* Rounded corners for modern design */
+    box-shadow: 0x 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
-.Offers-left{
+
+.Offers-left {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 20px; /* Adds consistent spacing between elements */
 }
-.Offers-left h1{
-    color: #171717;
-    font-size: 80px;
-    font-weight: 600;
 
+.Offers-left h1 {
+    color: #1e293b; /* Modern dark text */
+    font-size: 64px; /* Slightly reduced for better alignment */
+    font-weight: 700; /* Enhanced font weight */
+    line-height: 1.2; /* Improved readability */
 }
-.Offers-left p{
-    color: #171717;
-    font-size: 22px;
-    font-weight: 600;
 
-}
-.Offers-left button{
-    width: 282px;
-    height:70px;
-    border-radius: 35px;
-    background: #ff4141;
-    border: none;
-    color: white;
-    font-size: 22px;
+.Offers-left p {
+    color: #374151; /* Softer dark text for description */
+    font-size: 20px;
     font-weight: 500;
+    line-height: 1.5; /* Better spacing for longer text */
+}
+
+.Offers-left button {
+    width: 300px; /* Slightly wider button for emphasis */
+    height: 70px;
+    border-radius: 35px;
+    background: linear-gradient(135deg, #ee5158, #f7373e); /* Modern green gradient */
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
     margin-top: 30px;
     cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease;
+}
+
+.Offers-left button:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    background: linear-gradient(135deg, #aa0000, #9b0000); /* Reverse gradient on hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+.Offers-left button:active {
+    transform: scale(0.95); /* Slight shrink on click */
+    background: linear-gradient(135deg, #388e3c, #66bb6a); /* Darker green when active */
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2); /* Softer shadow */
 }
 

@@ -26,7 +26,7 @@ const ProductDisplay = (props) => {
       </div>
       <div className="productdisplay-right">
         <h1>{product.name}</h1>
-        <div className="productdisplay-right-star">
+        <div className="productdisplay-right-stars">
           {/* Replace static icons with dynamic stars based on rating */}
           {[...Array(4)].map((_, index) => (
             <img key={index} src={star_icon} alt="Star" />
@@ -34,6 +34,27 @@ const ProductDisplay = (props) => {
           <img src={star_dull_icon} alt="Star" />
           <p>(122)</p>
         </div>
+        <div className="productdisplay-right-prices">
+            <div className="productdisplay-right-price-old">Rs{product.old_price}</div>
+            <div className="productdisplay-right-price-new">Rs{product.new_price}</div>
+
+        </div>
+        <div className="productdisplay-right-description">
+        A comfortable and stylish shirt made from high-quality fabric, perfect for casual or formal wear. Designed for a great fit and lasting durability.
+        </div>
+        <div className="prductdisplay-right-size">
+            <h1>Select Size</h1>
+            <div className="productdisplay-right-size">
+                <div>S</div>
+                <div>M</div>
+                <div>L</div>
+                <div>XL</div>
+                <div>XXL</div>
+            </div>
+        </div>
+        <button>ADD TO CART</button>
+        <p className='productdisplay-right-category'><span>Category :</span>Women , T-shirt , Croptop</p>
+        <p className='productdisplay-right-category'><span>Tags :</span>Modern,Latest</p>
       </div>
     </div>
   );

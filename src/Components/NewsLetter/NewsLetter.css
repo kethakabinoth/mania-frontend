@@ -8,8 +8,9 @@
     margin:auto;
     padding: 0px 140px;
     margin-bottom: 150px;
-    background:linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    background:linear-gradient(180deg, #f450cd 0%, #e1ffea22 60%);
     gap: 30px;
+    border-radius: 20px; /* Rounded corners for modern design */
 }
 .newsletter h1{
     color: #454545;
@@ -36,7 +37,7 @@
     margin-left: 30px;
     border: none;
     outline: none;
-    color: #616161;
+    color: #100e0e;
     font-family: Poppins;
     font: size 16px; ;
 }

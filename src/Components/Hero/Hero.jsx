@@ -1,34 +1,34 @@
-import React from 'react'
-import'./Hero.css'
-import hand_icon from '../Assets/hand_icon.png'
-import arrow_icon from '../Assets/arrow.png'
-import hero_image from '../Assets/hero_image.png'
+import React from 'react';
+import './Hero.css';
+import discount_icon from '../Assets/discount_icon.png'
+import arrow_icon from '../Assets/arrow.png';
+import mania_logo from '../Assets/mania_logo.png';
 
 function Hero() {
   return (
-    <div className='hero'>
-        <div className="hero-left">
-            <h2>NEW ARRIVALS ONLY</h2>
-            <div>
-              <div className="hero-hand-icon">
-                <p>new</p>
-                <img src={hand_icon} alt=""/>
-                </div> 
-                <p>collection</p> 
-                <p>for everyone</p>
-            </div>
-            <div className="hero-latest-btn">
-                <div>Latest Collection</div>
-                <img src={arrow_icon} alt="" />
-            </div>
-        </div>
-        <div className="hero-right">
-            <img src={hero_image} alt="" />
+    <div className="hero">
+      <div className="hero-left">
+        <h2>NEW ARRIVALS ONLY</h2>
+        <div>
+        <div className="hero-hand-icon">
+         <p>𝑩𝒆 𝑩𝒐𝒍𝒅</p>
+          <img src={discount_icon} alt="" className="discount-icon" />
+         </div>
 
+          <p>𝑩𝒆 𝑺𝒕𝒚𝒍𝒊𝒔𝒉  </p>
+          <p>𝓑𝓮 𝓜𝓪𝓷𝓲𝓪</p>
         </div>
-      
+        <div className="hero-latest-btn">
+          <div>Latest Collection</div>
+          <img src={arrow_icon} alt="" />
+        </div>
+      </div>
+      <div className="hero-right">
+        <img src={mania_logo} alt="" />
+      </div>
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
+
