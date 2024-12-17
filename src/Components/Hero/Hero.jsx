@@ -2,7 +2,7 @@ import React from 'react';
 import './Hero.css';
 import discount_icon from '../Assets/discount_icon.png'
 import arrow_icon from '../Assets/arrow.png';
-import mania_logo from '../Assets/mania_logo.png';
+import new_logo from '../Assets/new_logo.png'
 
 function Hero() {
   return (
@@ -24,7 +24,7 @@ function Hero() {
         </div>
       </div>
       <div className="hero-right">
-        <img src={mania_logo} alt="" />
+        <img src={new_logo} alt="" />
       </div>
     </div>
   );

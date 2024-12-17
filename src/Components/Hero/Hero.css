@@ -66,25 +66,57 @@
     transform: scale(1.1);
     background: #d93434;
 }
-
 .hero-right {
     flex: 10;
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: slideInRight 1.2s ease-in-out;
+    width: 100vw; /* Full screen width */
+    height: 100vh; /* Full screen height */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent unwanted scrollbars */
+    position: relative;
 }
 
 .hero-right img {
-    max-width: 90%;
-    height: auto;
-    object-fit: contain;
-    transform: scale(0.9);
-    flex: 0;
+    width: 100vw; /* Spread across the viewport width */
+    height: 100vh; /* Spread across the viewport height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    display: block; /* Ensures no extra space */
+    margin: 0;
+    padding: 0;
+    transition: transform 0.4s ease, opacity 5s ease; /* Smooth animation */
+}
+
+/* Hover animations */
+.hero-right img:hover {
+    transform: scale(1.1) rotate(5deg); /* Zoom and slight rotation on hover */
+    opacity: 0.85; /* Slight transparency on hover */
+}
+
+/* Shake effect on hover */
+.hero-right img:hover {
+    animation: shake 0.5s ease-in-out; /* Shake effect */
+}
+
+/* Shake keyframes */
+@keyframes shake {
+    0% { transform: translateX(5px); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+
+
+
+
  
     
    
-}
+
 
 /* Keyframes for Animations */
 @keyframes fadeIn {

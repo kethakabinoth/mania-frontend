@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Navbar.css'
-import logo from '../Assets/logo.png'
+import n_logo from '../Assets/n_logo.png'
 import cart_icon from '../Assets/cart_icon.png'
 import { Link } from 'react-router'
 const Navbar = () => {
@@ -10,8 +10,8 @@ const Navbar = () => {
   return (
     <div className='navbar'> 
      <div className="nav-logo">
-     <img src={logo} alt="" />
-     <p>𝓜𝓪𝓷𝓲𝓪</p>
+     <img src={n_logo} alt="" className="w-40" />
+     
      </div>
      
      <ul className="nav-menu">
