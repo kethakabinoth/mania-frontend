@@ -58,7 +58,7 @@
 }
 
 .nav-login-cart button:hover {
-    background: linear-gradient(135deg, #00bcd4, #6c63ff); /* Gradient reverses on hover */
+    background: linear-gradient(135deg, #dd0591, #5f0c37); /* Gradient reverses on hover */
     transform: scale(1.1); /* Button enlarges slightly */
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }

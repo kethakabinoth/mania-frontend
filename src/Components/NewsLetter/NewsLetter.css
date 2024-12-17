@@ -13,7 +13,7 @@
     border-radius: 20px; /* Rounded corners for modern design */
 }
 .newsletter h1{
-    color: #454545;
+    color: #1e293b;
     font-size: 55px;
     font-weight: 600;
 
@@ -50,6 +50,5 @@
     color: white;
     font-size: 16px;
     cursor: pointer;
-
 
 }
