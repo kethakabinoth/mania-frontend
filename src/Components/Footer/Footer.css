@@ -16,6 +16,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    cursor: pointer;
 }
 
 .footer-logo p {
@@ -41,7 +42,7 @@
 }
 
 .footer-links li:hover {
-    color: #e4ca34; /* Vibrant green on hover */
+    color: #df0ac6; /* Vibrant green on hover */
     transform: translateY(-3px);
 }
 

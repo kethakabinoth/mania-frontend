@@ -70,10 +70,10 @@
   /* Style for the image */
   .Offers-right img {
     width: auto; /* Adjust as needed */
-    height: auto;
-    border-radius: 10px; /* Optional: Makes the edges rounded */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth effects */
-    cursor: pointer; /* Indicates it's clickable */
+    height: 550px;
+    border-radius: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer; 
   }
   
   /* Hover effect for the image */
