@@ -86,104 +86,34 @@
     display: block; /* Ensures no extra space */
     margin: 0;
     padding: 0;
-    transition: transform 0.4s ease, opacity 5s ease; /* Smooth animation */
+    transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.3s ease; /* Smooth animation */
 }
 
-/* Hover animations */
+/* Hover effect: Tilt and fade-in effect */
 .hero-right img:hover {
-    transform: scale(1.1) rotate(5deg); /* Zoom and slight rotation on hover */
-    opacity: 0.85; /* Slight transparency on hover */
+    transform: rotate(10deg) scale(1.05); /* Slight rotation and zoom on hover */
+    opacity: 0.9; /* Slight transparency on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
 
-/* Shake effect on hover */
+/* Tilt effect (mouse movement) */
+.hero-right img {
+    transform: perspective(1000px); /* Create a 3D space */
+}
+
 .hero-right img:hover {
-    animation: shake 0.5s ease-in-out; /* Shake effect */
+    transform: perspective(1000px) rotateX(10deg) rotateY(10deg); /* Tilt effect on hover */
 }
 
-/* Shake keyframes */
-@keyframes shake {
-    0% { transform: translateX(5px); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-5px); }
-    100% { transform: translateX(0); }
+/* Fade-in effect */
+.hero-right img {
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 2s forwards; /* Fade in on load */
 }
 
-
-
-
-
- 
-    
-   
-
-
-/* Keyframes for Animations */
+/* Fade-in keyframes */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes rotateIcon {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: scale(0.9);
-    }
-    50% {
-        transform: scale(1);
-    }
-}
-
-@keyframes textGlow {
-    from {
-        text-shadow: 0 0 5px #e71717, 0 0 10px #ff7171, 0 0 15px #ff4141;
-    }
-    to {
-        text-shadow: 0 0 10px #ff4141, 0 0 20px #ff7171, 0 0 30px #e71717;
-    }
-}
