@@ -1,6 +1,6 @@
  import React from 'react'
  import './Footer.css'
- import footer_logo from '../Assets/logo_big.png'
+ import footer_logo from '../Assets/n_logo.png'
  import instagram_icon from '../Assets/instagram_icon.png'
  import Facebook_icon from '../Assets/Facebook_icon.png'
  import whatsapp_icon from '../Assets/whatsapp_icon.png'
@@ -10,7 +10,7 @@
      <div className='footer'>
         <div className="footer-logo">
             <img src={footer_logo} alt=''/>
-            <p>SHOPPER</p>
+            <p>"𝑀𝒶𝓃𝒾𝒶 𝒞𝓁𝑜𝓉𝒽𝒾𝓃𝑔 𝒲𝑒𝒶𝓇 𝒴𝑜𝓊𝓇 𝒫𝒶𝓈𝓈𝒾𝑜𝓃"</p>
         </div>
         <ul className="footer-links">
             <li>Company</li>

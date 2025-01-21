@@ -1,8 +1,9 @@
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-around;
     padding: 16px;
-    box-shadow: 0 1px 3px --2px black;
+    background: linear-gradient(135deg, #ffffff);/* Attractive gradient background */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 .nav-logo{
   display:flex ;
@@ -15,31 +16,82 @@
     color: #171717;
     font-size: 38px;
     font-weight: 600;
+    font-family: 'popins', sans-serif;
 }
-.nav-menu{
+.nav-menu {
     display: flex;
     align-items: center;
     list-style: none;
     gap: 50px;
-    color: #b52fda;
+    color: #a824cd;
     font-size: 20px;
     font-weight: 500;
     font-style: normal;
+    transition: color 0.3s ease;
 }
-.nav-menu li{
+
+.nav-menu li {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3px;
+    gap: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
-.nav-menu hr{
+
+.nav-menu li:hover {
+    color: #ff4141;
+    transform: translateY(-5px);
+}
+
+.nav-menu hr {
     border: none;
     width: 80%;
     height: 3px;
     border-radius: 10px;
-    background-color: #e01134;
+    background-color: #ff4141;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: center;
 }
+
+.nav-menu li:hover hr {
+    transform: scaleX(1);
+}
+
+/* Keyframe animations for additional effects */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav-menu li {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.nav-menu li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.nav-menu li:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.nav-menu li:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.nav-menu li:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
 .nav-login-cart{
     display:flex;
     align-items: center;
