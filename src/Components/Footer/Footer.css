@@ -27,10 +27,7 @@
     cursor: pointer;
     
 }
-.footer-logo :hover {
-    color: #a214e4; /* Vibrant green on hover */
-    transform: translateY(-3px);
-}
+
 .footer-links {
     display: flex;
     list-style: none;
@@ -46,7 +43,7 @@
 }
 
 .footer-links li:hover {
-    color: #cb3ef6; /* Vibrant green on hover */
+    color: #d73ef6; /* Vibrant green on hover */
     transform: translateY(-3px);
 }
 
