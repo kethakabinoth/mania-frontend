@@ -4,10 +4,14 @@ import { Link } from 'react-router-dom';
 
 const Item = (props) => {
   return (
-    <div className='item'>
-      {/* Use a clean URL structure */}
+    <div className="item">
+      {/* Link to product page */}
       <Link to={`/product/${props.id}`}>
-        <img src={props.image} alt={props.name} />
+        <img 
+          onClick={() => window.scrollTo(0, 0)} 
+          src={props.image} 
+          alt={props.name || 'Product Image'} 
+        />
       </Link>
       <p>{props.name}</p>
       <div className="item-prices">
@@ -21,5 +25,4 @@ const Item = (props) => {
     </div>
   );
 };
-
 export default Item;
