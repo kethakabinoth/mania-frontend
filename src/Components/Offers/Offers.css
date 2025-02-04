@@ -16,38 +16,37 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px; /* Adds consistent spacing between elements */
+     /* Adds consistent spacing between elements */
 }
 
 .Offers-left h1 {
     color: #1e293b; /* Modern dark text */
-    font-size: 64px; /* Slightly reduced for better alignment */
-    font-weight: 700; /* Enhanced font weight */
-    line-height: 1.2; /* Improved readability */
+    font-size: 80px; /* Slightly reduced for better alignment */
+    font-weight: 600; /* Enhanced font weight */
+     /* Improved readability */
 }
 
 .Offers-left p {
     color: #374151; /* Softer dark text for description */
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.5; /* Better spacing for longer text */
+    font-size: 22px;
+    font-weight: 600;
+   /* Better spacing for longer text */
 }
 
 .Offers-left button {
-    width: 220px; /* Slightly wider button for emphasis */
-    height: 50px;
+    width: 282px; /* Slightly wider button for emphasis */
+    height: 70px;
     border-radius: 35px;
     background: linear-gradient(135deg, #ee5158, #f7373e); /* Modern green gradient */
     border: none;
     color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 500;
     margin-top: 30px;
     cursor: pointer;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     transition: all 0.3s ease;
 }
-
 .Offers-left button:hover {
     transform: scale(1.05); /* Slight zoom on hover */
     background: linear-gradient(135deg, #aa0000, #9b0000); /* Reverse gradient on hover */
@@ -86,26 +85,112 @@
   .Offers-right img:active {
     transform: scale(0.95); /* Slight shrink on click */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Reduced shadow */
+}
+  * Style for the container */
+.Offers-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 50px;
+   
   }
+  
+  /* Style for the image */
+  .Offers-right img {
+    width: 300px; /* Adjust as needed */
+    height: 400px;
+    border-radius: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer; 
+  }
+  
+/* Reduced shadow */
+
   @media(max-width:1280px){
-    .offers{
+    .Offers{
         padding:0px 80px;
-        margin: bottom 120px;
+        margin-bottom: 120px;
     }
-    .offers-left h1{
+    .Offers-left h1{
         font-size: 40px;
     }
-    .offers-left p{
+    .Offers-left p{
         font-size: 18px;
     }
-    .offers-right img{
+    .Offers-right img{
         width:300px;
     }
-    .offers-left button{
+    .Offers-left button{
         width: 220px;
         height: 50px;
         font-size: 18px;
     }
+    .Offers-right{
+        padding-top: 30px;
+    }
   }
-
-  
+  @media(max-width:1024px){
+    .Offers{
+        padding:0px 60px;
+        margin-bottom: 80px;
+        height: 40vh;
+    }
+    .Offers-left h1{
+        font-size: 30px;
+    }
+    .Offers-left p{
+        font-size: 16px;
+    }
+    .Offers-right img{
+        width:200px;
+    }
+    .Offers-left button{
+        width: 160px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .Offers-right{
+        padding-top: 10px;
+    }
+ }
+  @media(max-width:800px){
+    .Offers{
+        margin-bottom:60px;
+    }
+    .Offers-left h1{
+        font-size: 22px;
+    }
+    .Offers-left p{
+        font-size: 13px;
+    }
+    .Offers-right img{
+        width:180px;
+    }
+    .Offers-left button{
+        width: 140px;
+        height: 30px;
+        font-size: 12px;
+    }
+  }
+  @media(max-width:500px){
+    .Offers{
+        height: 25vh;
+        margin-bottom:50px;
+    }
+    .Offers-left h1{
+        font-size: 16px;
+    }
+    .Offers-left p{
+        font-size: 10px;
+    }
+    .Offers-right img{
+        width:120px;
+    }
+    .Offers-left button{
+        width: 120px;
+        height: 25px;
+        font-size: 10px;
+        margin-top: 12px;
+    }
+  }
