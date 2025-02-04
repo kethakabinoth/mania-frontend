@@ -1,139 +1,224 @@
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    padding: 16px;
-    background: linear-gradient(135deg, #ffffff);/* Attractive gradient background */
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-}
-.nav-logo{
-  display:flex ;
+  display: flex;
+  justify-content: space-between; /* Spread out the items */
+  padding: 16px;
+  background: linear-gradient(135deg, #f1efef);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
   align-items: center;
-  gap: 0px;
-  
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box; /* Ensure it fits within the screen */
+}
 
+/* Logo */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transform: scale(1.5);
 }
-.nav-logo p{
-    color: #171717;
-    font-size: 38px;
-    font-weight: 600;
-    font-family: 'popins', sans-serif;
+
+.nav-logo img {
+  width: 30px;
 }
+.nav-logo p {
+  display: flex;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+/* Menu Items */
 .nav-menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 50px;
-    color: #a824cd;
-    font-size: 20px;
-    font-weight: 500;
-    font-style: normal;
-    transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+  gap: 50px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .nav-menu li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    cursor: pointer;
-    transition: transform 0.3s ease, color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .nav-menu li:hover {
-    color: #ff4141;
-    transform: translateY(-5px);
+  color: #ff4141;
+  transform: translateY(-3px);
 }
 
 .nav-menu hr {
-    border: none;
-    width: 80%;
-    height: 3px;
-    border-radius: 10px;
-    background-color: #ff4141;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-    transform-origin: center;
+  border: none;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #ff4141;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 .nav-menu li:hover hr {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
-/* Keyframe animations for additional effects */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Login & Cart */
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 45px;
 }
 
-.nav-menu li {
-    animation: fadeIn 0.5s ease forwards;
-}
-
-.nav-menu li:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.nav-menu li:nth-child(2) {
-    animation-delay: 0.1s;
-}
-
-.nav-menu li:nth-child(3) {
-    animation-delay: 0.2s;
-}
-
-.nav-menu li:nth-child(4) {
-    animation-delay: 0.3s;
-}
-
-.nav-login-cart{
-    display:flex;
-    align-items: center;
-    gap: 45px;
-}
 .nav-login-cart button {
-    width: 160px;
-    height: 60px;
-    border: none; /* Removed solid border */
-    border-radius: 50px; /* Smooth pill shape */
-    color: #ffffff; /* White text for contrast */
-    font-size: 18px;
-    font-weight: 600;
-    background: linear-gradient(135deg, #cc90c0, #c40bae); /* Modern gradient background */
-    cursor: pointer;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  width: 157px;
+  height: 58px;
+  font-size: 20px;
+  border: 1px solid #7a7a7a;
+  border-radius: 75px;
+  color: #515151;
+  font-weight: 500;
+  background: linear-gradient(135deg, #cc90c0, #c40bae);
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .nav-login-cart button:hover {
-    background: linear-gradient(135deg, #dd0591, #5f0c37); /* Gradient reverses on hover */
-    transform: scale(1.1); /* Button enlarges slightly */
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  background: linear-gradient(135deg, #dd0591, #5f0c37);
+  transform: scale(1.1);
 }
 
-.nav-login-cart button:active {
-    transform: scale(0.95); /* Slightly shrink button on click */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow on click */
-    background: linear-gradient(135deg, #6c63ff, #007c91); /* Subtle darker color when active */
+.nav-cart-container {
+  position: relative;
+  display: inline-block;
+ } /* Ensures it wraps the content properly */
+
+/* Cart Count */
+.nav-cart-count {
+  width: 22px;
+  height: 22px;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 11px;
+  font-size: 14px;
+  background: rgb(243, 12, 12);
+  color: white;
+  position: absolute;
+  /* Align cart count to the top-right corner */
+}
+.navbar-dropdown{
+  display: none;
 }
 
+/* Responsive Styles */
+@media (max-width: 1280px){
+  .navbar {
+    padding: 12px 50px;
+  }
+  .nav-logo img{
+    width: 40px;
+  }
+  .nav-logo p{
+    font-size: 25px;
+  }
+  .nav-menu{
+    gap:30px;
+    font-size: 16px;
+  }
+  .nav-login-cart{
+    gap:30px;
+    
+  }
+  .nav-login-cart button{
+    width:120px;
+    height: 40px;
+    font-size:16px ;
+  }
+  .nav-cart-count{
+   margin-left: -40px;
+   font-size: 12px;
+  }
+  
+  @media(max-width:1024px){
+    .navbar{
+      padding: 12px 30px;
+    }
+    .nav-menu{
+      gap:25px;
+      font-size:14px
+    }
+    nav-login-cart button{
+      width: 80px;
+      height: 35px;
+      font-size: 14px;
+    
+    }
+    .nav-login-cart img{
+      width:30px ;
+    }
+    .nav-cart-count{
+      width: 18px;
+      height: 18px;
+    }
+  }
 
-.nav-cart-count{
-    width:22px;
-    height: 22px;
-    display: flex;
+
+}
+@media(max-width:800px){
+  .navbar{
+    padding:10px 0px ;
+  }
+  .nav-dropdown{
+    display: block;
+    width: 30px;
+    rotate: -90deg;
+    transition: 0.5s;
+    
+  }
+  .nav-menu{
+    display: none;
+    height:80px;
+    width: 100%;
+    position: absolute;
+    background-color: white;
     justify-content: center;
-    align-items: center;
-    margin-top: -35px;
-    margin-left: -55px;
-    border-radius: 11px;
-    font-size: 14px;
-    background: red;
-    color: white;
+    top: 50px;
+  }
+  .nav-menu-visible{
+    display: flex;
+  }
+  .nav-dropdown.open{
+    transform: rotate(90deg);
+  }
 }
+@media(max-width:500px){
+  .navbar{   
+    padding: 8px 0px;
+    gap: 0px;
+  }
+  .nav-logo{
+    transform:scale(2.0)
+  }
+  .nav-menu{
+    height: 70px;
+    top:50px ;
+  }
+  .nav-login-cart{
+    transform:scale(0.8);
+  }
+
+}
+
+ 
+
+
+
+
