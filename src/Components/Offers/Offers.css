@@ -144,6 +144,7 @@
     }
     .Offers-right img{
         width:200px;
+        height: 40vh;
     }
     .Offers-left button{
         width: 160px;
@@ -166,6 +167,7 @@
     }
     .Offers-right img{
         width:180px;
+        height:30vh;
     }
     .Offers-left button{
         width: 140px;
@@ -186,6 +188,7 @@
     }
     .Offers-right img{
         width:120px;
+        height:20vh;
     }
     .Offers-left button{
         width: 120px;
