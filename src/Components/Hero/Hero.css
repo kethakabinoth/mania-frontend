@@ -33,15 +33,11 @@
     animation: fadeInUp 1.5s ease-in-out;
 }
 
-.discount-icon {
-    width: 190px; /* Adjust size as needed */
-    height: auto;
-  }
-  .hero-hand-icon {
+.hero-hand-icon {
     display: flex;
     align-items: center;
     gap: 10px;
-  }
+}
 
 
 .hero-latest-btn {
@@ -81,39 +77,117 @@
 
 .hero-right img {
     width: 100vw; /* Spread across the viewport width */
-    height: 100vh; /* Spread across the viewport height */
+    height: 85vh; /* Spread across the viewport height */
     object-fit: cover; /* Ensures the image covers the area without distortion */
     display: block; /* Ensures no extra space */
     margin: 0;
     padding: 0;
-    transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.3s ease; /* Smooth animation */
-}
-
-/* Hover effect: Tilt and fade-in effect */
-.hero-right img:hover {
-    transform: rotate(10deg) scale(1.05); /* Slight rotation and zoom on hover */
-    opacity: 0.9; /* Slight transparency on hover */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-}
-
-/* Tilt effect (mouse movement) */
-.hero-right img {
-    transform: perspective(1000px); /* Create a 3D space */
-}
-
-.hero-right img:hover {
-    transform: perspective(1000px) rotateX(10deg) rotateY(10deg); /* Tilt effect on hover */
-}
-
-/* Fade-in effect */
-.hero-right img {
-    opacity: 0; /* Initially hidden */
-    animation: fadeIn 2s forwards; /* Fade in on load */
+    
 }
 
 /* Fade-in keyframes */
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+@media(max-width:1280px){
+    .hero-left{
+        padding-left: 100px;
+    }
+    .hero-left h2{
+        font-size: 22px;
+    }
+    .hero-left p{
+        font-size: 60px;
+    }
+    .discount_icon img{
+        width: 80px;
+        }
+    }
+    .hero-latest-btn{
+        width: 250px;
+        gap: 10px;
+        font-size: 18px;
+        height: 60px;
+        margin-top: 20px;
+    
+    }
+    .hero-right img{
+        width: 500px;
+    }
+    
+
+@media(max-width:1024px){
+    .hero-left{
+        padding-left: 80px;
+    }
+    .hero-left h2{
+        font-size: 20px;
+    }
+    .hero-left p{
+        font-size: 50px;
+    }
+    .discount_icon img{
+        width: 65px;
+    }
+    .hero-latest-btn{
+        width: 220px;
+        font-size: 16px;
+        height: 50px;
+         
+    }
+    .hero-right img{
+        width: 400px;
+    }
+    
+}
+@media(max-width:800px){
+    .hero-left{
+        padding-left: 30px;
+    }
+    .hero-left h2{
+        font-size: 16px;
+    }
+    .hero-left p{
+        font-size: 40px;
+    }
+    .discount_icon img{
+            width: 50px;
+    }
+    .hero-latest-btn{
+        width: 175px;
+        font-size: 13px;
+        height: 40px;
+         
+    }
+    .hero-right img{
+        width: 300px;
+    }
+    
+}
+@media(max-width:500px){
+    .hero{
+        flex-direction:column
+    }
+    .hero-right{
+        display: none ;
+    }
+
+    .hero-left h2{
+        font-size: 18px;
+    }
+    .hero-left p{
+        font-size: 50px;
+    }
+    .discount_icon img{
+        width: 55px;
+    }
+    .hero-latest-btn{
+        width: 200px;
+        height: 45px;
+        font-size: 14px;
+}
+  
+      
 }
 

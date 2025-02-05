@@ -1,8 +1,7 @@
 import React from 'react';
 import './Hero.css';
-import discount_icon from '../Assets/discount_icon.png'
 import arrow_icon from '../Assets/arrow.png';
-import new_logo from '../Assets/new_logo.png'
+import new_logoN from '../Assets/new_logoN.png'
 
 function Hero() {
   return (
@@ -10,9 +9,9 @@ function Hero() {
       <div className="hero-left">
         <h2>NEW ARRIVALS ONLY</h2>
         <div>
-        <div className="hero-hand-icon">
+        <div className="new_logoN">
          <p>𝑩𝒆 𝑩𝒐𝒍𝒅</p>
-          <img src={discount_icon} alt="" className="discount-icon" />
+         
          </div>
 
           <p>𝑩𝒆 𝑺𝒕𝒚𝒍𝒊𝒔𝒉  </p>
@@ -24,7 +23,7 @@ function Hero() {
         </div>
       </div>
       <div className="hero-right">
-        <img src={new_logo} alt="" />
+        <img src={new_logoN} alt="" />
       </div>
     </div>
   );
