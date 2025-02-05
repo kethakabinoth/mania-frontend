@@ -76,7 +76,9 @@
         gap: 5px;
         
     }
-}@media(max-width:500px){
+}
+
+@media(max-width:500px){
     .collections{
         display: grid;
         grid-template-columns: 1fr 1fr;
