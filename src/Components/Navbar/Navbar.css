@@ -180,8 +180,7 @@
     display: block;
     width: 30px;
     rotate: -90deg;
-    transition: 0.5s;
-    
+    transition: 0.5s;   
   }
   .nav-menu{
     display: none;
@@ -191,6 +190,7 @@
     background-color: white;
     justify-content: center;
     top: 50px;
+    z-index: 10;
   }
   .nav-menu-visible{
     display: flex;
