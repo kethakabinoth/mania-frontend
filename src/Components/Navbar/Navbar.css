@@ -76,20 +76,21 @@
 }
 
 .nav-login-cart button {
-  width: 157px;
-  height: 58px;
+  width: 140px;
+  height: 50px;
   font-size: 20px;
-  border: 1px solid #7a7a7a;
-  border-radius: 75px;
-  color: #515151;
-  font-weight: 500;
-  background: linear-gradient(135deg, #cc90c0, #c40bae);
+  border: 1px solid #de06ff;
+  border-radius: 100px;
+  color: #ff00fb;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff, #ffffff);
   cursor: pointer;
   transition: all 0.3s ease;
+  
 }
 
 .nav-login-cart button:hover {
-  background: linear-gradient(135deg, #dd0591, #5f0c37);
+  background: linear-gradient(135deg, #eddfef, #f1adff);
   transform: scale(1.1);
 }
 
