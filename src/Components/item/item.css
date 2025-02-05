@@ -34,8 +34,8 @@
         width: 220px;
         font-size: 14px; 
     }
-    .item-img{
-        width: 220px;
+    .item img{
+        width: 220px !important;
     }
     .item-price-old{
         font-size: 14px;
@@ -46,8 +46,8 @@
         width:170px;
         font-size: 13px;
     }
-    .item-img{
-        width: 170px;
+    .item img{
+        width: 170px !important;
     }
     .item-price-old{
         font-size: 13px;
@@ -58,8 +58,8 @@
         width:120px;
         font-size: 12px;
     }
-    .item-img{
-        width: 120px;
+    .item img{
+        width: 120px !important;
     }
     .item-price-old{
         font-size: 12px;
@@ -69,7 +69,7 @@
     .item {
         width: 160px;
     }
-    .item-img{
-        width: 160px;
+    .item img{
+        width: 160px !important;
     }
 }
