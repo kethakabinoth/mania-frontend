@@ -1,5 +1,6 @@
+/* Base Styles */
 .cartitems {
-    margin: 100px 10%; /* Adjusted margin for better responsiveness */
+    margin: 100px 10%;
 }
 
 .cartitems hr {
@@ -9,7 +10,7 @@
 }
 
 /* Grid Layout for Cart Header & Items */
-.cartitems-format-main {
+.cartitems-format-main, .cartitems-format {
     display: grid;
     grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
     align-items: center;
@@ -18,15 +19,12 @@
     color: #454545;
     font-size: 18px;
     font-weight: 600;
+    border-bottom: 2px solid #ddd;
 }
 
 .cartitems-format {
-    display: grid;
-    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 500;
-    gap: 50px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
 }
 
 /* Product Image */
@@ -61,15 +59,15 @@
 /* Cart Bottom Section */
 .cartitems-down {
     display: flex;
-    justify-content: space-between; /* Align items to both sides */
-    align-items: center; /* Center items vertically */
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     margin-top: 50px;
     padding: 20px;
     border: 2px solid #f2d2d2;
     background: #fff8f8;
     border-radius: 10px;
-    position: relative; /* Position relative for controlling button positioning */
+    position: relative;
 }
 
 /* Cart Total Section */
@@ -91,7 +89,6 @@
 
 /* Checkout Button */
 .cartitems-down button {
-    margin-top: 20px;
     background: #ff6f61;
     color: white;
     font-size: 18px;
@@ -101,10 +98,9 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
-    margin-left: auto; /* Push the button to the far right */
-    position: absolute; /* Absolute position the button at the bottom-right */
-    bottom: 2px; /* Distance from the bottom */
-    right: 20px; /* Distance from the right */
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
 }
 
 .cartitems-down button:hover {
@@ -128,7 +124,8 @@
 }
 
 .cartitems-promobox input {
-    width: 330px;
+    width: 100%;
+    max-width: 504px;
     height: 50px;
     padding: 10px;
     background: transparent;
@@ -153,47 +150,53 @@
     background: #e55b50;
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
-    .cartitems {
-        margin: 50px 5%;
-    }
-
-    .cartitems-format-main,
-    .cartitems-format {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-        font-size: 16px;
-    }
-
-    .cartitems-remove-icon {
-        margin: 0;
-    }
-
-    .cartitems-down {
-        justify-content: center; /* Center items on smaller screens */
-        align-items: center; /* Center vertically on smaller screens */
-        position: relative; /* Ensure relative positioning works */
-    }
-
-    .cartitems-total {
-        margin-right: 0;
-        text-align: center;
-    }
-
-    .cartitems-promobox {
-        flex-direction: column;
-    }
-
-    .cartitems-promobox input {
-        width: 100%;
-    }
-
-    .cartitems-down button {
-        margin-left: 0; /* Remove margin-left for small screens */
-        position: relative; /* Keep button relative on smaller screens */
-        bottom: unset; /* Remove bottom positioning on small screens */
-        right: unset; /* Remove right positioning on small screens */
+/* Responsive Design */
+@media (max-width: 1280px) {
+    .cartitems-format-main, .cartitems-format {
+        grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+        font-size: 17px;
+        gap: 30px;
     }
 }
 
+@media (max-width: 1024px) {
+    .cartitems-format-main, .cartitems-format {
+        grid-template-columns: 1fr 2fr 1fr 1fr;
+        font-size: 16px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .cartitems-format-main, .cartitems-format {
+        grid-template-columns: 1fr 2fr 1fr;
+        font-size: 15px;
+        gap: 15px;
+    }
+    .cartitems-down button {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .cartitems-format-main, .cartitems-format {
+        grid-template-columns: 1fr;
+        font-size: 14px;
+        gap: 10px;
+    }
+    .cartitems-total {
+        width: 100%;
+        padding: 10px;
+    }
+    .cartitems-down {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cartitems-down button {
+        width: 100%;
+    }
+}
